@@ -1,0 +1,15 @@
+import { InfinitySpin } from "react-loader-spinner"
+export default function Loader (){
+   return<>
+   <div>
+      <InfinitySpin
+  visible={true}
+  width="600"
+  color="#4fa94d"
+  ariaLabel="infinity-spin-loading">
+      
+      </InfinitySpin>
+      <p>Is loading</p>
+   </div>
+   </>
+}
