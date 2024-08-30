@@ -8,8 +8,7 @@ import { fetchImages } from './services/imageServices';
 import Loader from './components/Loader/Loader';
 import ErrorMessage from './components/ErrorMessage/ErrorMessage';
 import ImageModal from './components/ImageModal/ImageModal';
-import ImageCard from './components/ImageGallery/ImageCard';
-
+import css from '../src/components/ImageGallery/ImageGallery.module.css'
 function App() {
 const [items,setItems]=useState([])  
 const [topic,setTopic]=useState("")
@@ -68,7 +67,7 @@ const closeModal=()=>{
     {loading && <Loader/>} 
     {isModalOpen && currentImage && (
         <ImageModal onClose={closeModal}>
-           <ImageCard regularImage={currentImage} />
+           <img src={currentImage} alt="big-Image" className={css.imageCardRegular}/>
         </ImageModal>
       )}
    

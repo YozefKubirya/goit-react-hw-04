@@ -14,7 +14,7 @@ export default function ImageModal ({children,onClose}){
      onAfterOpen={() => window.addEventListener('keydown', handleKeyDown)}
      onAfterClose={() => window.removeEventListener('keydown', handleKeyDown)}
      className={css.modal}
-     overlayClassName={css.overlay}> {children}  {/* Вміст модального вікна передається через пропси */}
+     overlayClassName={css.overlay}> {children}  
       <button onClick={onClose} className={css.closeBtn}>X</button></Modal>
    </>
 }

@@ -12,22 +12,22 @@
   
  }
  
- .galleryImage {
+ .smallGalleryImage {
   width: 100%;
   height: 100%;
    object-fit: cover;
    display: block;
    border-radius: 8px;
-   box-shadow: 0 4px 8px rgba(0, 2, 0, 1);
+   box-shadow: 0 4px 8px #000200;
  }
  
-.galleryImage:hover{
+.smallGalleryImage:hover{
   cursor: zoom-in;;
   transform: scale(1.02);
   transition-duration: 1500ms;
 }
 
-.imageCardImg {
+.imageCardRegular {
   width: 100%;
   height: 750px;
   border-radius: 12px;

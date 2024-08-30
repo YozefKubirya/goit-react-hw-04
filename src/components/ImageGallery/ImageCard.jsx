@@ -1,10 +1,9 @@
+
 import css from '../ImageGallery/ImageGallery.module.css'
 export default function ImageCard ({
-   regularImage
+  onImageClick,regularImage,smallImage
 }){
    return <>
-   <div >
-      <img src={regularImage} alt="big image" className={css.imageCardImg} />
-   </div>
+      <img src={smallImage} className={css.smallGalleryImage}  alt='small-Image' onClick={()=>onImageClick(regularImage)}/>
    </>
 }
